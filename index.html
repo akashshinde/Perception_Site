@@ -2,21 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Perception 2014</title>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="javascript_one_scroll/jquery.onepage-scroll.js"></script>
-  <link href='javascript_one_scroll/onepage-scroll.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-theme.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap-theme.min.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="index_menu/css/component.css">
-  <link rel="stylesheet" type="text/css" href="index_menu/css/demo.css">
-  <link rel="stylesheet" type="text/css" href="index_menu/css/normalize.css">
-  <script type="text/javascript" src="index_menu/js/classie.js"></script>
-  <script type="text/javascript" src="index_menu/js/menu.js"></script>
-  <script type="text/javascript" src="index_menu/js/modernizr.custom.25376.js"></script>
-  
+	<title></title>
+	<script type="text/javascript" src="jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+  <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <style>
     html {
       height: 100%;
@@ -43,69 +33,6 @@
       text-decoration: none;
     }
     
-    /* Effect Move Left */
-.effect-moveleft {
-    background: #f4f3f1;
-}
- 
-.effect-moveleft .container {
-    transition: transform 0.4s;
-    transform-origin: 50% 50%;
-}
- 
-.effect-moveleft .container::after {
-    background: rgba(255,255,255,0.6);
-}
- 
-.effect-moveleft.animate .container {
-    transform: translateX(-50%) rotateY(45deg) translateZ(-50px);
-}
- 
-/* Fallback */
-.no-csstransforms3d .effect-moveleft.animate .container {
-    left: -75%;
-}
- 
-/* Navigation */
-.effect-moveleft .outer-nav a {
-    color: #e86a32;
-    opacity: 0;
-    transform: translateX(100px) translateZ(-1000px);
-    transition: transform 0.4s, opacity 0.4s;
-}
- 
-.effect-moveleft .outer-nav a:hover {
-    color: #333;
-}
- 
-.effect-moveleft.animate .outer-nav a {
-    opacity: 1;
-    transform: translateX(0) translateZ(0);
-}
- 
-.effect-moveleft.animate .outer-nav a:nth-child(2) {
-    transition-delay: 0.04s;
-}
- 
-.effect-moveleft.animate .outer-nav a:nth-child(3) {
-    transition-delay: 0.08s;
-}
- 
-.effect-moveleft.animate .outer-nav a:nth-child(4) {
-    transition-delay: 0.12s;
-}
- 
-.effect-moveleft.animate .outer-nav a:nth-child(5) {
-    transition-delay: 0.16s;
-}
- 
-.effect-moveleft.animate .outer-nav a:nth-child(6) {
-    transition-delay: 0.2s;
-}
- 
-.effect-moveleft.animate .outer-nav a:nth-child(7) {
-    transition-delay: 0.24s;
-}
     
     h1, h2 {
       width: 100%;
@@ -135,7 +62,7 @@
     h2 {
       color: #6D461D;
       font-weight: 100;
-      margin-top: 0;
+      margin-top: 50px;
       margin-bottom: 10px;
     }
     
@@ -307,15 +234,13 @@
     }
     
     .main section.page1 {
-     
-     background-image: url(space.jpg);
-     
+    background: #555557 url(space.jpg) no-repeat center -150px ;
     }
     .main section.page1 h1 {
       text-align: left;
       padding: 0;
       margin-bottom: 15px;
-      font-size: 56px;
+      font-size: 70px;
       color: black;
     }
     .main section.page1 h2 {
@@ -331,7 +256,7 @@
       text-align: center;
     }
     .main section.page2 {
-      background: #555557 url(back-phone.png) no-repeat center -150px ;
+      background: #555557 url(space1.jpg) no-repeat center -150px ;
     }
     .main section.page2 > img {
       position: absolute;
@@ -362,7 +287,7 @@
       color: #FFF;
       }
     .main section.page3 {
-      background:url(tilted-phone.png) no-repeat 156px -150px ;
+      background:url(space4.jpg);
     }
     .main section.page3 .page_container {
       overflow: hidden;
@@ -384,6 +309,7 @@
       font-weight: 100;
       font-size: 21px;
     }
+    
     body.disabled-onepage-scroll .onepage-wrapper  section {
       min-height: 100%;
       height: auto;
@@ -434,89 +360,46 @@
 	<script>
 	  $(document).ready(function(){
       $(".main").onepage_scroll({
-        easing : "cubic-bezier(0.175, 0.885, 0.420, 1.310)",
-         animationTime: 750,
+        easing: "cubic-bezier(0.175, 0.885, 0.420, 1.310)",
+        animationTime :500,
         sectionContainer: "section",
-        loop: true,
         responsiveFallback: 600
       });
 		});
 		
 	</script>
-  <link rel="stylesheet" href="../css/demo.css">
-  <script src="../js/demo.js"></script>
 </head>
 <body>
 
-    <!-- AdPacks.com Ad Code -->
-    <script type="text/javascript">
-    (function(){
-      var bsa = document.createElement('script');
-         bsa.type = 'text/javascript';
-         bsa.async = true;
-         bsa.src = '//s3.buysellads.com/ac/bsa.js';
-      (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
-    })();
-    </script>
-    
-	  <div class="main">
-      <section class="page1">
-        <div class="page_container" align="center" style="margin-top:15px">
-      <img src="logo1.png;" height="180px" width="160px"></img>
 
-        
-        <h2 style="color:#80D0E0;margin-top:60px" ><strong>Vishwakarma Institute of Information Technology</strong></h2>
-        <p style="color:#F0FFF0"><strong>Vishwakarma Institute of Information Technology, or VIIT as it’s commonly abbreviated, was founded in 2002 to impart world class education and to develop useful manpower with entrepreneurship qualities for industries.</strong>
+    
+      <div class="main">
+      <section class="page1">
+        <div class="page_container" style="margin-top:15px; align="center";">
+      <img src="logo1.png;" height="180px" width="160px"></img>  
+        <h2 style="color:#80D0E0;margin-top:60px;font-size:170%;" ><strong>Vishwakarma Institute of Information Technology</strong></h2>
+        <p style="color:#F0FFF0; font-size:120%;"><strong>Vishwakarma Institute of Information Technology, or VIIT as it’s commonly abbreviated, was founded in 2002 to impart world class education and to develop useful manpower with entrepreneurship qualities for industries.</strong>
 
         </p>
 
         </div>
-          
-      </section>
-       <section class="page3">
-        <div class="page_container">
-           <div class="jumbotron">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p
-   
-  </div>
 
-          
-        </div>
       </section>
 	    
 	    <section class="page2">
 	      <div class="page_container">
-          <h1>Ready-to-use plugin</h1>
-          <h2>All you need is an HTML markup, call the script and BAM!</h2>
-          <code class="html">
-  	        &lt;div class="main"&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          &lt;section&gt;...&lt;/section&gt;<br>
-  	          ...<br>
-  	        &lt;/div&gt;
-  	      </code>
-  	      <code class="js">
-	          $(".main").onepage_scroll();
-	        </code>
+          
 	      </div>
       </section>
 	    
-	   
-
-     
+	    <section class="page3">
+	      <div class="page_container">
+          
+  	    </div>
+      </section>
     </div>
-    <a class="back"><img src="title.png"></a>
-   
+    <a class="back"><img src="title.png"/></a>
+    
   </div>
-  
-  <script>
-
-  	var _gaq=[['_setAccount','UA-11278966-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
-  	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-  	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-  	s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>
